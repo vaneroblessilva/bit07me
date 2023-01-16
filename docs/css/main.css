@@ -1,13 +1,92 @@
-img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .pic {
-    width: 200px;
-    border-radius: 12%;
-  }
-  
-  .name {
-    color: black;
-  }
+*{
+  box-sizing:border-box;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF5E4;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav{
+  background-color: #579BB1;
+  display:flex;
+  color: white;
+  justify-content:left;
+  height: 40px;
+  align-items: center;
+  padding: 20px;
+}
+header {
+  background-color: #ECE8DD;
+  display: flex;
+}
+
+main{
+  background-color: #ECE8DD;
+  color:black;
+  display: flex;
+  flex-direction: column;
+}
+.nombre{
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+}
+.titulo{
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+}
+.acerca{
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+aside{
+  background-color: #E1D7C6;
+  color:black;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link {
+  color: white;
+}
+.me{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+img{
+  border-radius: 200px;
+}
+header {
+justify-content: center;
+}
+header,main, footer, nav, aside{
+  width: 1380px;
+}
+.enlaces{
+  font-family: 'Marhey', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Secular One', sans-serif;
+}
+.link 
+{
+  text-decoration-line: none;
+  color: white;
+}
+.icono
+{
+  width: 100px;
+}
