@@ -1,92 +1,192 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Roboto:wght@300&display=swap');
+
 *{
+  margin: 0;
+  padding: 0;
   box-sizing:border-box;
 }
 
-body {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #FFF5E4;
-  display: flex;
-  flex-wrap: wrap;
-}
-nav{
-  background-color: #579BB1;
-  display:flex;
-  color: white;
-  justify-content:left;
-  height: 40px;
-  align-items: center;
-  padding: 20px;
-}
-header {
-  background-color: #ECE8DD;
-  display: flex;
+body{
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-main{
-  background-color: #ECE8DD;
-  color:black;
-  display: flex;
-  flex-direction: column;
+.wrapper{
+  width: 100vw;
+  height: 89vh;
+  background-color: #00ADB5;
 }
-.nombre{
+
+.navbar {
   display: flex;
-  justify-self: center;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.menu{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.menu li{
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.menu .active{
+  color: #EEEEEE;
+}
+
+.menu a:hover{
+  background-color: #EEEEEE;
+  color: #222831;
+  transition: ease-in .4s;
+}
+
+.main{
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+
+h1{
+  font-size: 3em;
+  color: #222831;
+}
+
+span{
+  color:#EEEEEE
+}
+
+.about{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 100vw;
+  align-items: center;
+  background-color: #393E46;
+}
+
+.about img{
+  width: 100%;
+  grid-column: 1/5;
+}
+
+.about-info{
+  grid-column: 5/10;
+  padding: 2em;
+  color: #EEEEEE;
+}
+
+
+.divider{
+  height: 4px;
+  width: 60px;
+  background-color: #00ADB5;
+  margin-top: 10px;
+  margin-bottom: 2em;
+}
+
+.divider2{
+  height: 4px;
+  width: 60px;
+  background-color: #EEEEEE;
+  margin-top: 10px;
+  margin-bottom: 2em;
+}
+
+.about p{
+  margin-bottom: 1em;
+}
+
+.portafolio{
+  width: 100vw;
+  background-color: #00ADB5;
+
+}
+.porfolio-headings{
+  width: 100vw;
+  padding: 5em;
+}
+
+.portafolio .container{
+  width: 100vw;
+  height: 80vh;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
-.titulo{
-  font-family: 'Roboto', sans-serif;
-  align-items: center;
+
+.card{
+  width: 300px;
+  background-color: #EEEEEE;
+  margin: 1em;
 }
-.acerca{
-  font-family: 'Roboto', sans-serif;
+
+.card_img{
+  width: 100%;
+  height: 150px;
+}
+
+.card_img img{
+  width: 100%;
+  height: 150px;
+}
+
+.card_titulo{
+  padding: 20px;
+}
+
+.projects-links{
   display: flex;
+  justify-content: space-evenly;
+}
+
+.projects-links a{
+  color:#222831;
+  text-decoration: none;
+}
+
+.projects-links i{
+font-size: 1.5em;
+}
+
+.card .detalle-proyecto{
+  display: flex;
+  margin: 0 auto;
+  margin: 1em;
+  width: 70%;
+  padding: 10px 20px;
+  background-color: #222831;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor:pointer;
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(178, 178, 178, 0.69);
+  -moz-box-shadow: 1px 3px 11px -5pxrgba(178, 178, 178, 0.69);
+  box-shadow: 1px 3px 11px -5px rgba(178, 178, 178, 0.69);
+}
+
+.card .detalle-proyecto:hover {
+  background-color: #222831;
+  box-shadow: none;
+
+}
+
+.card .detalle-proyecto a{
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+.contenedor-proyectos{
+  display: flex;
+  width: 100%;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-aside{
-  background-color: #E1D7C6;
-  color:black;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-footer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.link {
-  color: white;
-}
-.me{
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 20px;
-}
-img{
-  border-radius: 200px;
-}
-header {
-justify-content: center;
-}
-header,main, footer, nav, aside{
-  width: 1380px;
-}
-.enlaces{
-  font-family: 'Marhey', cursive;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Secular One', sans-serif;
-}
-.link 
-{
-  text-decoration-line: none;
-  color: white;
-}
-.icono
-{
-  width: 100px;
+  margin-top: 1em;
 }

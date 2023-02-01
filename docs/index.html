@@ -5,68 +5,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Vanessa Robles</title>
-  </head>
-  <body>
-    <nav class="enlaces">
-      <b>
-        <a class= "link" href="index.html">Home</a> &nbsp &nbsp
-        <a class= "link" href="#Acerca de">Perfil</a> &nbsp &nbsp
-        <a class= "link" href="https://www.linkedin.com/in/vanessa-robles-silva/" target="_blank">Contacto</a>&nbsp &nbsp
-        <a class= "link" href="https://vaneroblessilva.github.io/bit06exercises/" target="_blank">Proyecto</a>
-      </b>
-    </nav>
-    <section id="Home">
-        <header>
-          <div class= "me">
-            <img class="pic" src="./img/me.jpg" alt="Foto" />
-          </div>
-    </section>
-        </header>
-<section id="Acerca de">
-    <main>
-      <div class="nombre">
-        <h1 class="titulo">
-          Vanessa Robles
-        </h1>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <header>
+    <!--Barra de navegación-->
+      <nav class="navbar">
+        <div class="brand">
+          <section id="Inicio"></section>
+        </div>
+            <ul class="menu">
+              <li><a class="active" href="#Inicio">Home</a></li>
+              <li><a href="#Sobre-mi">Sobre mi</a></li>
+              <li><a href="#Portafolio">Portafolio</a></li>
+              <li><a href="https://www.linkedin.com/in/vanessa-robles-silva/" target="_blank">Contacto</a></li>
+            </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="info-content">
+        <h1>Vanessa <span>Robles</span></h1>
+        <p>Ingeniera con conocimientos en lenguaje de programacion de tipo Front end y Back end.</p>
       </div>
-    <div class="acerca">
-      <p>
-        Consultor SAP PP/QM con conocimientos en lenguaje de programacion de tipo Front end y Back end.
-        Tengo mas de 6 años de experiencia en diferentes industrias como alimentos, textil, retail, agroindustria entre otros,
-        desarrollandome como modeladora de procesos de produccion en sistemas ERP.
-      </p>
+      <img src="../docs/img/me.png" alt="Vanessa Robles">
+    </main>
+  </div>
+
+<div class="about">
+  <div class="about-info">
+    <section id="Sobre-mi"></section>
+    <h2>Sobre mi</h2>
+      <div class="divider"></div>
+       <p>Ing. Químico con más de 6 años de experiencia en Consultoria de sistema con conocimientos en lenguaje de programación JavaScrip.</p>
+       <p>Durante mi carrera profesional he trabajado con metodologías agiles como Scrum, Kamba, SAP Activate entre otros. He liderado equipos de trabajo para el desarrollo y puesta en marcha de proyectos IT en el área de producción.</p>
+       <p>Soy dinámica, proactiva, con muy buen manejo de trabajo en equipo.</p>
+  </div>
+</div>
+
+<div class="portafolio">
+  <div class="porfolio-headings">
+    <section id="Portafolio"></section>
+    <h2>Mi Portafolio</h2>
+    <div class="divider2"></div>
+  </div>
+  <div class="container">
+  <!--Primer proyecto-->
+    <div class="card">
+      <div class="card_img">
+        <img src="./img/proyecto1.png" alt="Curiosidades Fer">
+      </div>
+      <div class="card_titulo">
+        <h2>Curiosidades Fer</h2>
+      </div>
+      <div class="projects-links">
+        <a href="https://github.com/vaneroblessilva" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://github.com/vaneroblessilva/bit05bootstrap" target="_blank">
+          <i class="fa-solid fa-globe"></i>
+        </a>
+        <a href="https://github.com/vaneroblessilva/bit05bootstrap" target="_blank">
+          <i class="fa-solid fa-code"></i>
+        </a>
+      </div>
+      <div class="contenedor-proyectos">
+        <button class="detalle-proyecto">
+          <a href="https://github.com/vaneroblessilva/bit05bootstrap" target="_blank">
+            Detalle del Proyecto
+          </a>
+        </button>
+      </div>
     </div>
-    </main> 
-    <aside>
-      <h2 class="titulo">
-        Educación
-      </h2>
-      <ul class="titulo">
-        <li>
-          Universidad de Carabobo. Facultad de Ingeniería. Escuela Ingeniería Química (2008-2015).
-        </li>
-      </ul>
-      <h2 class="titulo">
-        Formación Complementaria
-      </h2>
-      <ul class="titulo">
-        <li>Academia BIT, duracion 2 meses. 2023</li>
-        <li>Academia EsperanSAP PP, duración 120 h. 2017</li>
-        <li>Programa de Formación en Consultoría de Negocios: Logística y Aprovisionamiento, 60 h. 2017</li>
-        <li>Curso de Inglés Básico, 395 h. 2017 </li>
-        <li>Diplomado en Coaching Organizacional, duración 140 h. 2017</li>
-      </ul>
-      </p>
-    </aside>
-  </section>
-    <footer>
-        <a title="GitHub" href="https://github.com/vaneroblessilva" target="_blank"><img class="icono" src="/docs/img/github.png" alt="GitHub"></a> &nbsp &nbsp
-      </figure>
-      <div class="titulo">
-        <p><small>Reservados todos los derechos.</small></p>
+  <!--Segundo proyecto-->
+    <div class="card">
+      <div class="card_img">
+        <img src="./img/proyecto2.png" alt="Curiosidades Fer">
       </div>
-    </footer>
-    <script src="./js/main.js"></script>
-  </body>
+      <div class="card_titulo">
+        <h2>Ejercicios JavaScrip</h2>
+      </div>
+      <div class="projects-links">
+        <a href="https://github.com/vaneroblessilva" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://vaneroblessilva.github.io/bit06exercises/" target="_blank">
+          <i class="fa-solid fa-globe"></i>
+        </a>
+        <a href="https://github.com/vaneroblessilva/bit06exercises" target="_blank">
+          <i class="fa-solid fa-code"></i>
+        </a>
+      </div>
+      <div class="contenedor-proyectos">
+        <button class="detalle-proyecto">
+          <a href="https://vaneroblessilva.github.io/bit06exercises/" target="_blank">
+            Detalle del Proyecto
+          </a>
+        </button>
+      </div>
+    </div>
+  <!--Tercer proyecto-->
+    <div class="card">
+      <div class="card_img">
+      </div>
+      <div class="card_titulo">
+        <h2>Lista de Tareas Read</h2>
+      </div>
+      <div class="projects-links">
+        <a href="https://github.com/vaneroblessilva">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-globe"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-code"></i>
+        </a>
+      </div>
+      <div class="contenedor-proyectos">
+        <button class="detalle-proyecto">
+          <a href="https://github.com/vaneroblessilva/bit05bootstrap">
+            Detalle del Proyecto
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
 </html>
