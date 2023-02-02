@@ -8,19 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-
   <div class="wrapper">
     <header>
     <!--Barra de navegación-->
-      <nav class="navbar">
-        <div class="brand">
-          <section id="Inicio"></section>
+      <nav class="main-nav">
+        <div class="toggle-menu">
+          <label for="toggle-menu-checkbox">
+          <i class="fa-solid fa-bars"></i>
+        </label>
         </div>
-            <ul class="menu">
-              <li><a class="active" href="#Inicio">Home</a></li>
-              <li><a href="#Sobre-mi">Sobre mi</a></li>
-              <li><a href="#Portafolio">Portafolio</a></li>
-              <li><a href="https://www.linkedin.com/in/vanessa-robles-silva/" target="_blank">Contacto</a></li>
+        <input type="checkbox" class="toggle-menu_checkbox" id="toggle-menu-checkbox">
+            <ul class="main-menu" id="main-menu">
+                <li class="main-menu_item"><a class="main-menu_link" href="#Inicio">Home</a></li>
+                <li class="main-menu_item"><a class="main-menu_link" href="#Sobre-mi">Sobre mi</a></li>
+                <li class="main-menu_item"><a class="main-menu_link" href="#Portafolio">Portafolio</a></li>
+                <li class="main-menu_item"><a class="main-menu_link" href="https://www.linkedin.com/in/vanessa-robles-silva/" target="_blank">Contacto</a></li>
             </ul>
       </nav>
     </header>
@@ -32,7 +34,7 @@
       <img src="img/me.png" alt="Vanessa Robles">
     </main>
   </div>
-
+  <!--Sobre mi-->
 <div class="about">
   <div class="about-info">
     <section id="Sobre-mi"></section>
@@ -43,11 +45,11 @@
        <p>Soy dinámica, proactiva, con muy buen manejo de trabajo en equipo.</p>
   </div>
 </div>
-
+  <!--Portafolio-->
 <div class="portafolio">
   <div class="porfolio-headings">
     <section id="Portafolio"></section>
-    <h2>Mi Portafolio</h2>
+    <h2>Portafolio</h2>
     <div class="divider2"></div>
   </div>
   <div class="container">
@@ -133,5 +135,26 @@
     </div>
   </div>
 </div>
+  <!--Pie de pagina-->
+<footer class="footer">
+<div class="footer-content">
+  <h2>Vanessa Robles</h2>
+  <div class="contenedor-proyectos">
+    <h5>Frontend Developer</h5>
+  </div>
+</div>
+<div class="sotial-network">
+  <a href="https://www.instagram.com/vaneroblessilva/?hl=es">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/vanessa-robles-silva/">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+  <a href="https://twitter.com/vaneroblessilva">
+    <i class="fa-brands fa-twitter"></i>
+  </a>
+</div>
+</footer>
+<script src="./js/main.js"></script>
 </body>
 </html>
